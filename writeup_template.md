@@ -93,12 +93,7 @@ After this I used some fully connected layers, which was reduced by a large amou
 
 The data was split into training and validation sets to test the models performance during training. The loss was mainly osberved. 
 
-
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
-
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
+Many iterations was executd with a look at the simulator for each model. T
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
 
