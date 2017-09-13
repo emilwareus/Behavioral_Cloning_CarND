@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/placeholder.png "Model Visualization"
 [image2]: ./Writeup_material/Model%20Visualization.PNG "Data Visualization"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
+[image3]: ./Writeup_material/Data%20distrubution.PNG "Data distrubution"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
@@ -123,7 +123,7 @@ Data was augumented by flipping the turning images with its negative label. Belo
 
 ![alt text][image2]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I decided to reduce to number of data-points with a label of 0.0 with 90%. This helped the model a lot wth training and turning in the sumulator. Below you can see the data distrubution: 
 
 ![alt text][image3]
 ![alt text][image4]
