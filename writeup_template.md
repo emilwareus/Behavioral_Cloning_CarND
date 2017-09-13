@@ -18,6 +18,7 @@ The goals / steps of this project are the following:
 
 [image2]: ./Writeup_material/Model%20Visualization.PNG "Data Visualization"
 [image3]: ./Writeup_material/Data%20distrubution.PNG "Data distrubution"
+[image1]: ./Writeup_material/Training.PNG "Training"
 
 
 ## Rubric Points
@@ -124,3 +125,6 @@ I decided to reduce to number of data-points with a label of 0.0 with 90%. This 
 
 ![alt text][image3]
 
+In the end, training performed quite well and loss of validation set and training set reduced equaly for 6 epochs. After that the model started overfitting. Below you can see a graph of the two losses: 
+
+![alt text][image1]
