@@ -121,7 +121,7 @@ To understand the pipline of the model I started with collecting two laps of tra
 
 Data was augumented by flipping the turning images with its negative label. Below you can see some example images with labels: 
 
-![alt text][image1]
+![alt text][image2]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
