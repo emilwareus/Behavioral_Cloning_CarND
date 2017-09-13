@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
+[image2]: ./Writeup_material/Model%20Visualization.PNG "Data Visualization"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
@@ -97,19 +97,31 @@ Many iterations was executd with a look at the simulator for each model. The cha
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The architecture of the model can be seen in line 232 to 254. It consist of the following layers: 
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
+* Normalization
+* Cropping 
+* Convolution (24, 5, 5), a stride of (2, 2) and a relu activation function
+* Dropout of 0.5
+* Convolution (36, 5, 5), a stride of (2, 2) and a relu activation function
+* Dropout of 0.5
+* Convolution (48, 5, 5), a stride of (2, 2) and a relu activation function
+* Convolution (64, 3, 3), a stride of (1, 1) and a relu activation function
+* Fully connected Layer (100)
+* Fully connected Layer (50)
+* Fully connected Layer (10)
+* Fully connected Layer (1)
+
+
+#### 3. Creation of the Training Set & Training Process
+
+To understand the pipline of the model I started with collecting two laps of training data only using the center lane. As this model performed poorly I collected two more laps clock-wise, one with a lot of recovery and two more laps counter clock-wise. This seemed to be enough data to not overfit the model and generalize to the track. 
+
+Data was augumented by flipping the turning images with its negative label. Below you can see some example images with labels: 
 
 ![alt text][image1]
-
-####3. Creation of the Training Set & Training Process
-
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
-
-![alt text][image2]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
