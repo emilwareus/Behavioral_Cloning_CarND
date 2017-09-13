@@ -43,13 +43,25 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
+
+The architecture of the model can be seen in line 232 to 254. It consist of the following layers: 
+
+* Normalization
+* Cropping 
+* Convolution (24, 5, 5), a stride of (2, 2) and a relu activation function
+* Dropout of 0.5
+* Convolution (36, 5, 5), a stride of (2, 2) and a relu activation function
+* Dropout of 0.5
+* Convolution (48, 5, 5), a stride of (2, 2) and a relu activation function
+* Convolution (64, 3, 3), a stride of (1, 1) and a relu activation function
+* 
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
