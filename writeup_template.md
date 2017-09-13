@@ -93,9 +93,7 @@ After this I used some fully connected layers, which was reduced by a large amou
 
 The data was split into training and validation sets to test the models performance during training. The loss was mainly osberved. 
 
-Many iterations was executd with a look at the simulator for each model. T
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+Many iterations was executd with a look at the simulator for each model. The challenges of slow turning and recovery was tuned with more data. 
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
